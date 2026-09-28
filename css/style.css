@@ -220,3 +220,11 @@ img { max-width: 100%; display: block; }
   .float-bar .btn { flex: 1; padding: 11px 10px; font-size: .95rem; }
   .float-bar .btn-ghost { color: var(--navy); }
 }
+
+/* ---------- แถบจุดขาย (promo) ---------- */
+.promo { display: inline-flex; flex-direction: column; gap: 2px; margin: 14px 0 6px; padding: 12px 18px;
+  background: var(--thread); color: #1d2430; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  transform: rotate(-1deg); }
+.promo strong { font-family: "Prompt", system-ui, sans-serif; font-size: clamp(1.25rem, 4.5vw, 1.9rem); font-weight: 700; line-height: 1.25; }
+.promo span { font-size: .95rem; font-weight: 500; }
+.promo:has(strong:empty) { display: none; }
